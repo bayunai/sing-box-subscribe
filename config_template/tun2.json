@@ -29,10 +29,6 @@
       {
         "tag": "block",
         "address": "rcode://success"
-      },
-      {
-        "tag": "fakedns",
-        "address": "fakeip"
       }
     ],
     "rules": [
@@ -54,13 +50,6 @@
         "disable_cache": true
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "fakedns"
-      },
-      {
         "rule_set": "geosite-cn",
         "server": "localDns"
       },
@@ -79,12 +68,7 @@
     ],
     "strategy": "ipv4_only",
     "final": "proxyDns",
-    "independent_cache": true,
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    }
+    "independent_cache": true
   },
   "outbounds": [
     {
