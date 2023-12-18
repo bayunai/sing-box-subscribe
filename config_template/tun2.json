@@ -705,7 +705,7 @@
       "type": "tun",
       "inet4_address": "172.19.0.0\/30",
       "inet6_address": "fdfe:dcba:9876::0\/126",
-      "stack": "system",
+      "stack": "mixed",
       "auto_route": true,
       "sniff": true,
       "platform": {
